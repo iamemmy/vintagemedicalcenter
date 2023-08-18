@@ -26,7 +26,7 @@
   }
 }
 .navbar {
-  background-color: #00a9e0;
+  background-color: #322653;
   width: 100%;
 }
 .navbar .navbar-container {
@@ -114,7 +114,7 @@
     right: 0;
     height: -moz-fit-content;
     height: fit-content;
-    background-color: #00a9e0;
+    background-color: #322653;
   }
 }
 .navbar .navbar-container .nav-menu .nav-item {
@@ -252,7 +252,7 @@
   }
 }
 .hero-container .hero-content .hero-cta a:first-child {
-  background-color: #00a9e0;
+  background-color: #322653;
 }
 .hero-container .hero-content .hero-cta a:nth-child(2) {
   background-color: transparent;
@@ -280,7 +280,7 @@
 }
 .intro .intro-top h1 {
   font-size: 40px;
-  background: linear-gradient(to right, #000000, #00a9e0);
+  background: linear-gradient(to right, #000000, #322653);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
@@ -322,7 +322,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: #00a9e0;
+  background-color: #322653;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 65vh;
@@ -384,7 +384,7 @@
   margin-top: auto;
   text-decoration: none;
   color: #ffffff;
-  background-color: #00a9e0;
+  background-color: #322653;
   padding: 15px 30px;
   border: 1px solid #ffffff;
   font-weight: 700;
@@ -435,7 +435,7 @@
   height: 5px;
   margin-top: -5px;
   margin-bottom: 10px;
-  background-color: #00a9e0;
+  background-color: #322653;
 }
 @media (max-width: 660.1px) {
   .choose-wrap .hr {
@@ -495,7 +495,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: #00a9e0;
+  background-color: #322653;
   margin-top: 20px;
   height: 70vh;
   overflow: hidden;
@@ -762,7 +762,7 @@
   width: 10%;
   height: 5px;
   margin-top: -20px;
-  background-color: #00a9e0;
+  background-color: #322653;
 }
 @media (max-width: 660.1px) {
   .appointment-wrapper .appointment-text .hr {
@@ -777,7 +777,7 @@
   flex: 1;
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form {
-  background: linear-gradient(120deg, #8062D6, #00a9e0);
+  background: linear-gradient(120deg, #8062D6, #322653);
   margin-inline: auto;
   width: 70%;
   display: flex;
@@ -832,7 +832,7 @@
   overflow: hidden;
   color: #ffffff;
   font-weight: 400;
-  background: linear-gradient(240deg, #8062D6, #00a9e0);
+  background: linear-gradient(240deg, #8062D6, #322653);
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form button:hover {
   background: #8062D6;
@@ -950,7 +950,7 @@
   width: 10%;
   height: 5px;
   margin-top: -20px;
-  background-color: #00a9e0;
+  background-color: #322653;
 }
 @media (max-width: 660.1px) {
   .emergency-faqs .faqs .hr {
@@ -1050,7 +1050,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-top div:nth-child(2) a:hover {
-  color: #00a9e0;
+  color: #322653;
 }
 .footer .footer-top div:nth-child(3) {
   display: flex;
@@ -1084,7 +1084,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-top div:nth-child(3) a:hover {
-  color: #00a9e0;
+  color: #322653;
 }
 .footer .footer-top div:nth-child(4) {
   display: flex;
@@ -1118,7 +1118,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-top div:nth-child(4) a:hover {
-  color: #00a9e0;
+  color: #322653;
 }
 .footer .footer-bottom {
   padding: 50px 50px 25px 50px;
@@ -1230,7 +1230,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-bottom .footer-bottom-bottom div:nth-child(2) a:hover {
-  color: #00a9e0;
+  color: #322653;
 }
 @media (max-width: 660.1px) {
   .footer .footer-bottom .footer-bottom-bottom div:nth-child(2) a {
@@ -1497,7 +1497,7 @@
   text-decoration: none;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #00a9e0;
+  background-color: #322653;
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -1592,7 +1592,7 @@
 }
 .contact-main .contact-form {
   flex: 1;
-  background: linear-gradient(120deg, #8062D6, #00a9e0);
+  background: linear-gradient(120deg, #8062D6, #322653);
   margin-inline: auto;
   width: 70%;
   display: flex;
@@ -1641,7 +1641,7 @@
   overflow: hidden;
   color: #ffffff;
   font-weight: 400;
-  background: linear-gradient(240deg, #8062D6, #00a9e0);
+  background: linear-gradient(240deg, #8062D6, #322653);
 }
 .contact-main .contact-form button:hover {
   background: #8062D6;
