@@ -1,0 +1,115 @@
+.contact-intro {
+    padding: 30px 50px;
+    @include mobile {
+        padding-inline: 30px;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+.contact-main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-inline: 50px;
+    margin-bottom: 30px;
+    @include mobile {
+        padding-inline: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form {
+        flex: 1;
+        background: linear-gradient(120deg, getColor(color04), getColor(color03));
+        margin-inline: auto;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        color: getColor(color01);
+        padding: 20px 30px;
+        @include tablet {
+            width: 90%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+        div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+            gap: 20px;
+            input {
+                width: 100%;
+                outline: none;
+                border: 1px solid getColor(color06);
+                padding: 5px;
+                text-indent: 5px;
+            }
+        }
+        textarea {
+            width: 100%;
+            outline: none;
+            border: 1px solid getColor(color06);
+            padding: 5px;
+            text-indent: 5px;
+        }
+        button {
+            width: 50%;
+            border: none;
+            padding: 15px 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            color: getColor(color02);
+            font-weight: 400;
+            background: linear-gradient(240deg, getColor(color04), getColor(color03));
+            &:hover {
+                background: getColor(color04);
+                color: getColor(color01);
+                transition: all .3s ease;
+            }
+            @include tablet {
+                width: 60%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+    .contact-map {
+        flex: 1;
+        width: 100%;
+    }
+}
+.contact-location {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    padding-inline: 50px;
+    margin-bottom: 30px;
+    @include mobile {
+        padding-inline: 30px;
+    }
+    .contact-location-1,.contact-location-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        img {
+            width: 30px;
+            @include mobile {
+                width: 25px;
+            }
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+    }
+}

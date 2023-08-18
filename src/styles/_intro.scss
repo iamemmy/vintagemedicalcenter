@@ -1,0 +1,47 @@
+.intro {
+    padding: 20px;
+    padding-top: 40px;
+    .intro-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 10px;
+        h4 {
+            font-size: 20px;
+            @include mobile {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+        }
+        h1 {
+            font-size: 40px;
+            background: linear-gradient(to right, getColor(color01), getColor(color03));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            @include tablet {
+                font-size: 1.8rem;
+            }
+            @include mobile {
+                font-size: 1.5rem;
+            }
+        }
+        p {
+            font-size: 1rem;
+        }
+        .hr {
+            margin-top: 20px;
+            margin-inline: auto;
+            background-color: getColor(color08);
+            width: 20%;
+            height: 1px;
+            @include tablet {
+                width: 30%;
+            }
+            @include tablet {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

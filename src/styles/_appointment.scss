@@ -1,0 +1,111 @@
+.appointment-wrapper {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: getColor(color02);
+    @include mobile {
+        flex-direction: column;
+    }
+    .appointment-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        color: getColor(color01);
+        padding: 20px 10px;
+        h3 {
+            font-size: 2.5rem;
+            @include tablet {
+                font-size: 2rem
+            }
+            @include mobile {
+                font-size: 1.6rem
+            }
+        }
+        .hr {
+            width: 10%;
+            height: 5px;
+            margin-top: -20px;
+            background-color: getColor(color03);
+            @include mobile {
+                width: 20%;
+                margin-top: -5px;
+            }
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    .appointment-form-wrap {
+        flex: 1;
+        .appointment-form {
+            background: linear-gradient(120deg, getColor(color04), getColor(color03));
+            margin-inline: auto;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            color: getColor(color01);
+            padding: 20px 30px;
+            @include tablet {
+                width: 90%;
+            }
+            @include mobile {
+                width: 100%;
+            }
+            div {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: start;
+                gap: 20px;
+                input {
+                    width: 100%;
+                    outline: none;
+                    border: 1px solid getColor(color06);
+                    padding: 5px;
+                    text-indent: 5px;
+                }
+                select {
+                    width: 100%;
+                    outline: none;
+                    border: 1px solid getColor(color06);
+                    padding: 5px;
+                }
+            }
+            textarea {
+                width: 100%;
+                outline: none;
+                border: 1px solid getColor(color06);
+                padding: 5px;
+                text-indent: 5px;
+            }
+            button {
+                width: 50%;
+                border: none;
+                padding: 15px 10px;
+                white-space: nowrap;
+                overflow: hidden;
+                color: getColor(color02);
+                font-weight: 400;
+                background: linear-gradient(240deg, getColor(color04), getColor(color03));
+                &:hover {
+                    background: getColor(color04);
+                    color: getColor(color01);
+                    transition: all .3s ease;
+                }
+                @include tablet {
+                    width: 60%;
+                }
+                @include mobile {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}

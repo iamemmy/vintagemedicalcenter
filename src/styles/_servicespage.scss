@@ -1,0 +1,121 @@
+.services-hero {
+    position: relative;
+    height: 400px;
+    background-image: url('../assets/site6.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    @include mobile {
+        height: 375px;
+    }
+    .services-hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h1 {
+            color: getColor(color02);
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            @include mobile {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+.services-intro {
+    padding: 30px 50px;
+    @include mobile {
+        padding: 30px;
+    }
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        @include tablet {
+            font-size: 2rem
+        }
+        @include mobile {
+            font-size: 1.6rem
+        }
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+.services-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-inline: 50px;
+    margin-bottom: 30px;
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid getColor(color08);
+        border-radius: 3px;
+        @include mobile {
+            gap: 20px;
+        }
+        &:hover {
+            transition: all .3s ease;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        }
+        .service-img {
+            width: 300px;
+            margin: auto;
+            flex: 1;
+            @include mobile {
+                width: 75%;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                border: 6px solid getColor(color02);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+        .service-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            @include mobile {
+                gap: 10px;
+            }
+            h4 {
+                font-size: 2rem;
+                font-weight: 400;
+                text-align: center;
+                @include tablet {
+                    font-size: 1.8rem
+                }
+                @include mobile {
+                    font-size: 1.3rem
+                }
+            }
+            p {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}

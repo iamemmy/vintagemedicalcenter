@@ -1,0 +1,115 @@
+.emergency-faqs {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: getColor(color04);
+    color: getColor(color02);
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+    .emergency {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        .emergency-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding-top: 50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            h4 {
+                font-size: 2rem;
+                font-weight: 400;
+                color: #ff0000;
+                @include tablet {
+                    font-size: 1.8rem
+                }
+                @include mobile {
+                    font-size: 1.4rem
+                }
+            }
+            h3 {
+                font-size: 3rem;
+                font-weight: 700;
+                @include tablet {
+                    font-size: 2.5rem
+                }
+                @include mobile {
+                    font-size: 2rem
+                }
+            }
+            p {
+                font-size: 1rem;
+                width: 50%;
+                text-align: center;
+                @include tablet {
+                    width: 60%;
+                }
+                @include mobile {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .faqs {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        h3 {
+            font-size: 2.5rem;
+            @include tablet {
+                font-size: 2rem
+            }
+            @include mobile {
+                font-size: 1.6rem
+            }
+        }
+        .hr {
+            width: 10%;
+            height: 5px;
+            margin-top: -20px;
+            background-color: getColor(color03);
+            @include mobile {
+                width: 20%;
+                margin-top: -5px;
+            }
+        }
+        .accordion {
+            width: 100%;
+            .accordion-item {
+                background: transparent;
+                border: none;
+                h2 {
+                    button {
+                        background: transparent;
+                        color: getColor(color02);
+                        font-weight: 500;
+                        font-size: 1.3rem;
+                        @include mobile {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .accordion-collapse {
+                    .accordion-body {
+                        color: getColor(color02);
+                        font-size: 1.1rem;
+                        @include mobile {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
