@@ -31,7 +31,12 @@ export default function Homeservices() {
         data-aos-delay="300"
         data-aos-offset="50"
         >Our Services</h3>
-        <div className='hr'></div>
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-delay="300"
+        data-aos-offset="50"
+        className='hr'></div>
         <div className='homeservices-items'>
           <div
           data-aos="fade-right"

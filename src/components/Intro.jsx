@@ -32,7 +32,6 @@ export default function Intro() {
           personalized medical attention, advanced treatments, and state-of-the-art facilities. Trust us to provide the 
           highest level of medical expertise and compassion, ensuring your health is in capable hands.
         </p>
-        <div className='hr'></div>
       </div>
     </div>
   )

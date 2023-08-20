@@ -18,7 +18,12 @@ export default function Homeabout() {
             data-aos-delay="300"
             data-aos-offset="50"
             >Who we are</h3>
-            <div className='hr'></div>
+            <div 
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-delay="300"
+            data-aos-offset="50"
+            className='hr'></div>
             <p
             data-aos="fade-up"
             data-aos-duration="500"

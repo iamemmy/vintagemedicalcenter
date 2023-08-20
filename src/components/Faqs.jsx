@@ -54,8 +54,18 @@ const Faqs = () => {
             </div>
         </div>
         <div className='faqs'>
-          <h3>FAQs</h3>
-          <div className='hr'></div>
+          <h3
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="300"
+          data-aos-offset="50"
+          >FAQs</h3>
+          <div 
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="300"
+          data-aos-offset="50"
+          className='hr'></div>
           <div className="accordion" id="accordionExample">
           {renderAccordionItem(0, 'Where is vintage medical located?', 'Vintage Medical is conveniently located at Plot 3213, F Road Citec Mount Pleasant Estate, Mbora District, Abuja.')}
           {renderAccordionItem(1, 'What are the visiting hours at Vintage Medical Center?', 'Vintage Medical Center offers flexible visiting hours to accommodate our patients needs. We are open 24 hours for visiting, and adjustments may be made based on the patients condition.')}

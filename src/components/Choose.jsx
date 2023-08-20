@@ -21,7 +21,12 @@ export default function Choose() {
           data-aos-delay="300"
           data-aos-offset="50"
         >Why Choose Us</h3>
-        <div className='hr'></div>
+        <div 
+        data-aos="fade-right"
+        data-aos-duration="500"
+        data-aos-delay="300"
+        data-aos-offset="50"
+        className='hr'></div>
         <div className='choose-bottom'>
             <div
             data-aos="fade-up"
