@@ -1,14 +1,29 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import Icon1 from '../assets/icon12.png';
 import Icon2 from '../assets/icon13.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Reviews() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
   return (
     <div className='reviews-wrapper'>
-        <h3>Reviews</h3>
+        <h3
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="300"
+        data-aos-offset="50"
+        >Reviews</h3>
         <div className='hr'></div>
         <div className='reviews'>
-            <div className='reviews-item'>
+            <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="350"
+            data-aos-offset="50"
+            className='reviews-item'>
                 <h4>Agu Ifeoma</h4>
                 <div className='reviews-star'>
                     <img src={Icon1} />
@@ -22,7 +37,12 @@ export default function Reviews() {
                     top-notch expertise and compassionate staff.
                 </p>
             </div>
-            <div className='reviews-item'>
+            <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="350"
+            data-aos-offset="50"
+             className='reviews-item'>
                 <h4>Keneth Ocheme</h4>
                 <div className='reviews-star'>
                     <img src={Icon1} />
@@ -36,7 +56,12 @@ export default function Reviews() {
                     care exceeded my expectations.
                 </p>
             </div>
-            <div className='reviews-item'>
+            <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="350"
+            data-aos-offset="50"
+            className='reviews-item'>
                 <h4>Kunle Jenifer</h4>
                 <div className='reviews-star'>
                     <img src={Icon1} />

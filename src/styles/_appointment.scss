@@ -51,6 +51,7 @@
             gap: 20px;
             color: getColor(color01);
             padding: 20px 30px;
+            border-radius: 10px;
             @include tablet {
                 width: 90%;
             }
@@ -69,12 +70,14 @@
                     border: 1px solid getColor(color06);
                     padding: 5px;
                     text-indent: 5px;
+                    border-radius: 10px;
                 }
                 select {
                     width: 100%;
                     outline: none;
                     border: 1px solid getColor(color06);
                     padding: 5px;
+                    border-radius: 10px;
                 }
             }
             textarea {
@@ -83,6 +86,7 @@
                 border: 1px solid getColor(color06);
                 padding: 5px;
                 text-indent: 5px;
+                border-radius: 10px;
             }
             button {
                 width: 50%;
@@ -93,6 +97,7 @@
                 color: getColor(color02);
                 font-weight: 400;
                 background: linear-gradient(240deg, getColor(color04), getColor(color03));
+                border-radius: 10px;
                 &:hover {
                     background: getColor(color04);
                     color: getColor(color01);

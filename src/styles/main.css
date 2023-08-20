@@ -25,11 +25,17 @@
     transform: scale(1.2);
   }
 }
+@keyframes moveAnimation {
+  to {
+    transform: translateX(100%); /* End position outside of the container */
+  }
+}
 .navbar {
-  background-color: #322653;
+  background-color: #4942E4;
   width: 100%;
 }
 .navbar .navbar-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +46,16 @@
   .navbar .navbar-container {
     padding-left: 0;
   }
+}
+.navbar .navbar-container .animation-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 2px;
+  background-color: #C4B0FF;
+  transform: translateX(-100%);
+  animation: moveAnimation 0.5s linear forwards;
 }
 .navbar .navbar-container .logo {
   text-decoration: none;
@@ -101,7 +117,7 @@
     padding: 10px 25px;
     overflow: hidden;
     z-index: 9999;
-    border-top: 1px solid #8062D6;
+    border-top: 1px solid #8696FE;
   }
 }
 @media (max-width: 660.1px) {
@@ -114,7 +130,7 @@
     right: 0;
     height: -moz-fit-content;
     height: fit-content;
-    background-color: #322653;
+    background-color: #4942E4;
   }
 }
 .navbar .navbar-container .nav-menu .nav-item {
@@ -252,7 +268,7 @@
   }
 }
 .hero-container .hero-content .hero-cta a:first-child {
-  background-color: #322653;
+  background-color: #4942E4;
 }
 .hero-container .hero-content .hero-cta a:nth-child(2) {
   background-color: transparent;
@@ -280,7 +296,7 @@
 }
 .intro .intro-top h1 {
   font-size: 40px;
-  background: linear-gradient(to right, #000000, #322653);
+  background: linear-gradient(to right, #000000, #4942E4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
@@ -322,7 +338,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: #322653;
+  background-color: #4942E4;
   margin-top: 20px;
   margin-bottom: 20px;
   height: 65vh;
@@ -370,7 +386,7 @@
   width: 10%;
   height: 5px;
   margin-top: -10px;
-  background-color: #8062D6;
+  background-color: #8696FE;
 }
 @media (max-width: 660.1px) {
   .homeabout .homeabout-top .hr {
@@ -384,7 +400,7 @@
   margin-top: auto;
   text-decoration: none;
   color: #ffffff;
-  background-color: #322653;
+  background-color: #4942E4;
   padding: 15px 30px;
   border: 1px solid #ffffff;
   font-weight: 700;
@@ -435,7 +451,7 @@
   height: 5px;
   margin-top: -5px;
   margin-bottom: 10px;
-  background-color: #322653;
+  background-color: #4942E4;
 }
 @media (max-width: 660.1px) {
   .choose-wrap .hr {
@@ -480,7 +496,7 @@
   border-radius: 50%;
 }
 .choose-wrap .choose-bottom .choose-item .choose-item-circle div {
-  background-color: #322653;
+  background-color: #4942E4;
   padding: 10px;
   border-radius: 50%;
 }
@@ -502,7 +518,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: #322653;
+  background-color: #4942E4;
   margin-top: 20px;
   height: 70vh;
   overflow: hidden;
@@ -665,7 +681,7 @@
   width: 5%;
   height: 5px;
   margin-top: -20px;
-  background-color: #8062D6;
+  background-color: #8696FE;
 }
 @media (max-width: 660.1px) {
   .reviews-wrapper .hr {
@@ -769,7 +785,7 @@
   width: 10%;
   height: 5px;
   margin-top: -20px;
-  background-color: #322653;
+  background-color: #4942E4;
 }
 @media (max-width: 660.1px) {
   .appointment-wrapper .appointment-text .hr {
@@ -784,7 +800,7 @@
   flex: 1;
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form {
-  background: linear-gradient(120deg, #8062D6, #322653);
+  background: linear-gradient(120deg, #8696FE, #4942E4);
   margin-inline: auto;
   width: 70%;
   display: flex;
@@ -793,6 +809,7 @@
   gap: 20px;
   color: #000000;
   padding: 20px 30px;
+  border-radius: 10px;
 }
 @media (max-width: 960.1px) {
   .appointment-wrapper .appointment-form-wrap .appointment-form {
@@ -817,12 +834,14 @@
   border: 1px solid #c5caf8;
   padding: 5px;
   text-indent: 5px;
+  border-radius: 10px;
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form div select {
   width: 100%;
   outline: none;
   border: 1px solid #c5caf8;
   padding: 5px;
+  border-radius: 10px;
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form textarea {
   width: 100%;
@@ -830,6 +849,7 @@
   border: 1px solid #c5caf8;
   padding: 5px;
   text-indent: 5px;
+  border-radius: 10px;
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form button {
   width: 50%;
@@ -839,10 +859,11 @@
   overflow: hidden;
   color: #ffffff;
   font-weight: 400;
-  background: linear-gradient(240deg, #8062D6, #322653);
+  background: linear-gradient(240deg, #8696FE, #4942E4);
+  border-radius: 10px;
 }
 .appointment-wrapper .appointment-form-wrap .appointment-form button:hover {
-  background: #8062D6;
+  background: #8696FE;
   color: #000000;
   transition: all 0.3s ease;
 }
@@ -863,7 +884,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  background-color: #8062D6;
+  background-color: #8696FE;
   color: #ffffff;
 }
 @media (max-width: 660.1px) {
@@ -957,7 +978,7 @@
   width: 10%;
   height: 5px;
   margin-top: -20px;
-  background-color: #322653;
+  background-color: #4942E4;
 }
 @media (max-width: 660.1px) {
   .emergency-faqs .faqs .hr {
@@ -1057,7 +1078,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-top div:nth-child(2) a:hover {
-  color: #322653;
+  color: #4942E4;
 }
 .footer .footer-top div:nth-child(3) {
   display: flex;
@@ -1091,7 +1112,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-top div:nth-child(3) a:hover {
-  color: #322653;
+  color: #4942E4;
 }
 .footer .footer-top div:nth-child(4) {
   display: flex;
@@ -1125,7 +1146,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-top div:nth-child(4) a:hover {
-  color: #322653;
+  color: #4942E4;
 }
 .footer .footer-bottom {
   padding: 50px 50px 25px 50px;
@@ -1210,7 +1231,7 @@
 }
 .footer .footer-bottom .footer-bottom-bottom div:first-child small a {
   text-decoration: none;
-  color: #8062D6;
+  color: #8696FE;
 }
 .footer .footer-bottom .footer-bottom-bottom div:nth-child(2) {
   flex: 1;
@@ -1237,7 +1258,7 @@
   transition: all 0.3s ease;
 }
 .footer .footer-bottom .footer-bottom-bottom div:nth-child(2) a:hover {
-  color: #322653;
+  color: #4942E4;
 }
 @media (max-width: 660.1px) {
   .footer .footer-bottom .footer-bottom-bottom div:nth-child(2) a {
@@ -1504,7 +1525,7 @@
   text-decoration: none;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #322653;
+  background-color: #4942E4;
   padding: 10px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -1599,7 +1620,7 @@
 }
 .contact-main .contact-form {
   flex: 1;
-  background: linear-gradient(120deg, #8062D6, #322653);
+  background: linear-gradient(120deg, #8696FE, #4942E4);
   margin-inline: auto;
   width: 70%;
   display: flex;
@@ -1648,10 +1669,10 @@
   overflow: hidden;
   color: #ffffff;
   font-weight: 400;
-  background: linear-gradient(240deg, #8062D6, #322653);
+  background: linear-gradient(240deg, #8696FE, #4942E4);
 }
 .contact-main .contact-form button:hover {
-  background: #8062D6;
+  background: #8696FE;
   color: #000000;
   transition: all 0.3s ease;
 }

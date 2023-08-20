@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Faqs = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleAccordionClick = (index) => {
@@ -34,7 +39,12 @@ const Faqs = () => {
 
   return (
     <div className='emergency-faqs'>
-        <div className='emergency'>
+        <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        data-aos-delay="300"
+        data-aos-offset="50"
+        className='emergency'>
             <div className='emergency-content'>
               <h4>Emergency Hotline</h4>
               <h3>08098587274</h3>

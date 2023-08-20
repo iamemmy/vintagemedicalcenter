@@ -2,6 +2,7 @@
     background-color: getColor(color03);
     width: 100%;
     .navbar-container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -10,6 +11,16 @@
         @include mobile {
             padding-left: 0;
         }
+        .animation-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 2px;
+            background-color: #C4B0FF;
+            transform: translateX(-100%);
+            animation: moveAnimation 0.5s linear forwards;
+          }
         .logo {
             text-decoration: none;
             color: getColor(color02);

@@ -18,8 +18,8 @@
 $colors:(
     color01: #000000,
     color02: #ffffff,
-    color03: #322653,
-    color04: #8062D6,
+    color03: #4942E4,
+    color04: #8696FE,
     color05: #E9F8F9,
     color06: #c5caf8,
     color07: #003cff,
@@ -62,5 +62,11 @@ $colors:(
     }
     to {
       transform: scale(1.2);
+    }
+}
+
+@keyframes moveAnimation {
+    to {
+      transform: translateX(100%); /* End position outside of the container */
     }
 }
