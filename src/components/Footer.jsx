@@ -36,7 +36,7 @@ export default function Footer() {
                 <a href="">
                     <img src={Icon1} alt="" />
                 </a>
-                <a href="">
+                <a href="mailto:info@vintagemedicalcentre.com">
                     <img src={Icon2} alt="" />
                 </a>
             </div>
